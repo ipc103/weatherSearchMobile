@@ -17,9 +17,9 @@ const SearchForm = ({city, region, handleQueryChange, handleSearch}) => (
     />
     <Button
       onPress={handleSearch}
-      title="Learn More"
+      title="Search for Weather"
       color="#841584"
-      accessibilityLabel="Learn more about this purple button"
+      accessibilityLabel="Search for Weather"
     />
   </View>
 )
