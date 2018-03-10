@@ -9,8 +9,8 @@ class CurrentConditionsContainer extends Component {
   constructor(){
     super()
     this.state = {
-      city: 'Pittsburgh',
-      region: 'PA',
+      city: '',
+      region: '',
       conditions: {
         message: 'Enter a city and state abbreviation'
       }
@@ -18,11 +18,6 @@ class CurrentConditionsContainer extends Component {
     this.handleQueryChange = this.handleQueryChange.bind(this)
     this.handleSearch      = this.handleSearch.bind(this)
     this.parseWeather      = this.parseWeather.bind(this)
-  }
-
-  componentDidMount(){
-    fetchCurrentConditions(this.state.city, this.state.region)
-      .then(this.parseWeather)
   }
 
   handleQueryChange(query){
