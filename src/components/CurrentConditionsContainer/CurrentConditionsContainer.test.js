@@ -11,11 +11,16 @@ describe('CurrentConditionsContainer', () => {
   })
 
   describe("handling search query change", () => {
+    const instance = wrapper.root.instance
 
     it('updates the city', () => {
-      const instance = wrapper.root.instance
       instance.handleQueryChange({city: 'Ann Arbor'})
       expect(instance.state.city).toEqual('Ann Arbor')
+    })
+
+    it('updates the region', () => {
+      instance.handleQueryChange({region: 'MI'})
+      expect(instance.state.region).toEqual('MI')
     })
   })
 })
