@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import CurrentConditionsContainer from './src/components/CurrentConditionsContainer.js'
+import CurrentConditionsContainer from './src/components/CurrentConditionsContainer'
 
 export default class App extends Component {
   render() {

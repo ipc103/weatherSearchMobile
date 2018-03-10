@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentConditionsContainer renders without crashing 1`] = `
+<View>
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      Enter City
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      onChangeText={[Function]}
+      style={
+        Object {
+          "borderColor": "gray",
+          "borderWidth": 1,
+          "height": 40,
+        }
+      }
+      value=""
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      Enter State
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      onChangeText={[Function]}
+      style={
+        Object {
+          "borderColor": "gray",
+          "borderWidth": 1,
+          "height": 40,
+        }
+      }
+      value=""
+    />
+    <View
+      accessibilityComponentType="button"
+      accessibilityLabel="Learn more about this purple button"
+      accessibilityTraits={
+        Array [
+          "button",
+        ]
+      }
+      accessible={true}
+      collapsable={undefined}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={undefined}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#007AFF",
+                "fontSize": 18,
+                "padding": 8,
+                "textAlign": "center",
+              },
+              Object {
+                "color": "#841584",
+              },
+            ]
+          }
+        >
+          Learn More
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      Enter a city and state abbreviation
+    </Text>
+  </View>
+</View>
+`;

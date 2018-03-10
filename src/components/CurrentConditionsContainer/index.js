@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { View } from 'react-native'
 
-import { fetchCurrentConditions } from '../api/weatherUnderground'
-import CurrentConditionsDetail from './CurrentConditionsDetail'
-import SearchForm from './SearchForm'
+import { fetchCurrentConditions } from '../../api/weatherUnderground'
+import CurrentConditionsDetail from '../CurrentConditionsDetail'
+import SearchForm from '../SearchForm'
 
 class CurrentConditionsContainer extends Component {
   constructor(){
@@ -21,8 +21,7 @@ class CurrentConditionsContainer extends Component {
     this.setState(query)
   }
 
-  handleSearch = (event) => {
-    event.preventDefault()
+  handleSearch = () => {
     fetchCurrentConditions(this.state.city, this.state.region)
       .then(this.parseWeather)
   }
