@@ -6,16 +6,14 @@ import CurrentConditionsDetail from '../CurrentConditionsDetail'
 import SearchForm from '../SearchForm'
 
 class CurrentConditionsContainer extends Component {
-  constructor(){
-    super()
-    this.state = {
+
+  state = {
       city: '',
       region: '',
       conditions: {
         message: 'Enter a city and state abbreviation'
       }
     }
-  }
 
   handleQueryChange = (query) => {
     this.setState(query)
