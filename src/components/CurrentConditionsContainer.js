@@ -15,22 +15,19 @@ class CurrentConditionsContainer extends Component {
         message: 'Enter a city and state abbreviation'
       }
     }
-    this.handleQueryChange = this.handleQueryChange.bind(this)
-    this.handleSearch      = this.handleSearch.bind(this)
-    this.parseWeather      = this.parseWeather.bind(this)
   }
 
-  handleQueryChange(query){
+  handleQueryChange = (query) => {
     this.setState(query)
   }
 
-  handleSearch(event){
+  handleSearch = (event) => {
     event.preventDefault()
     fetchCurrentConditions(this.state.city, this.state.region)
       .then(this.parseWeather)
   }
 
-  parseWeather(data){
+  parseWeather = (data) => {
     if (data.current_observation) {
       this.setState({
         city: '',
