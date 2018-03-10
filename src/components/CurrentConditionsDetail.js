@@ -23,7 +23,7 @@ const CurrentConditionsDetail = ({conditions}) => {
 
 CurrentConditionsDetail.defaultProps = {
   conditions: {
-    message: 'No weather info found'
+    message: 'Sorry nothing here!!!'
   }
 }
 
