@@ -43,7 +43,7 @@ exports[`CurrentConditionsContainer renders without crashing 1`] = `
     />
     <View
       accessibilityComponentType="button"
-      accessibilityLabel="Learn more about this purple button"
+      accessibilityLabel="Search for Weather"
       accessibilityTraits={
         Array [
           "button",
@@ -96,7 +96,7 @@ exports[`CurrentConditionsContainer renders without crashing 1`] = `
             ]
           }
         >
-          Learn More
+          Search for Weather
         </Text>
       </View>
     </View>
